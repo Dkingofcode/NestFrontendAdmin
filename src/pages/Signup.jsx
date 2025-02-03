@@ -11,7 +11,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://localhost:3000/api/auth/register', { email, password, role, name });
+    await axios.post('https://nestadminbackend.onrender.com/api/auth/register', { email, password, role, name });
     navigate('/login');
   };
 

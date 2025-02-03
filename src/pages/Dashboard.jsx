@@ -39,7 +39,7 @@ const Dashboard = () => {
         fetchTasks();
         const fetchUserDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/users/${userId}`); // Fetch user details with dynamic ID
+                const response = await axios.get(`https://nestadminbackend.onrender.com/api/users/${userId}`); // Fetch user details with dynamic ID
                 setUser(response.data);
             } catch (error) {
                 console.error('Error fetching user details:', error);
